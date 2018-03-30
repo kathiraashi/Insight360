@@ -1,0 +1,48 @@
+<div class="login">
+  <div class="row logo-row">
+    <div class="col-sm-12">
+        <img src="assets/Files/images/logonew1.png" alt="Logo" class="login-logo">
+    </div>
+  </div>
+  <div class="row card-row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+      <mat-card class="example-card login-card">
+        <mat-card-header>
+            <mat-card class="example-card login-header">
+                <mat-card-content>
+                  <h3> Login Page </h3>
+                </mat-card-content>
+              </mat-card>
+        </mat-card-header>
+        <mat-card-content class="mt-40">
+
+          <div class="form-field">
+            <mat-icon>perm_identity</mat-icon>
+            <mat-form-field class="example-full-width">
+              <input matInput #message maxlength="26" placeholder="User E-mail">
+              <mat-hint align="start"><strong></strong> </mat-hint>
+              <mat-hint align="end"></mat-hint>
+            </mat-form-field>
+          </div>
+
+          <div class="form-field">
+            <mat-icon>lock_outline</mat-icon>
+            <mat-form-field class="example-full-width">
+              <input matInput #message maxlength="12" placeholder="Password">
+              <mat-hint align="start"><strong></strong> </mat-hint>
+              <mat-hint align="end"></mat-hint>
+            </mat-form-field>
+          </div>
+
+        </mat-card-content>
+        <mat-card-actions>
+            <a mat-raised-button routerLink="/dashboard"> Login </a>
+        </mat-card-actions>
+        <hr>
+        <h5 class="forgot"> Forgot <a href=""> Password ? </a> </h5>
+      </mat-card>
+    </div>
+    <div class="col-sm-4"></div>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+/* input Color Change */
+.mat-focused .mat-form-field-label{
+    color: #49b660 !important;
+}
+.mat-form-field-ripple{
+    background-color: #49b660;
+}

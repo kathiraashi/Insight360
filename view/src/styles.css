@@ -1,0 +1,17 @@
+
+/* npm material and cdk css */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '../node_modules/@angular/cdk/overlay-prebuilt.css';
+@import '../node_modules/@angular/cdk/a11y-prebuilt.css';
+
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+/* Custom css */
+@import '../src/assets/css/custom-margin-padding.css';
+
+/* Overwrite css */
+@import '../src/assets/overwrite-css/material-common-overwrite.css';
+
+body{
+    background-color: #ecf0f5b5;
+}

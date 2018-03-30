@@ -1,0 +1,72 @@
+.login{
+    margin-top: 35px;
+    }
+    .login .logo-row, .login .card-row{
+        margin: 0px;
+    }
+    .login .logo-row .login-logo{
+        height: 80px;
+    }
+    .login .logo-row .col-sm-12{
+        text-align: center;
+    }
+    .login .example-card.login-card{
+        margin-top: 60px;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+        border-radius: 0px;
+        background-color: #ffffff;
+    }
+    .login .example-card.login-header{
+        width: 100%;
+        background-color:#3cbe5b;
+        box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+        color: #ffffff;
+        padding: 5px 0px;
+        margin-top: -45px;
+    }
+    .login .example-card.login-header h3{
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    .mt-40{
+        margin-top: 40px;
+    }
+    
+    .login .form-field{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .login .form-field .mat-icon.material-icons{
+        font-size: 35px;
+        color: #777777; 
+        position: absolute;
+        margin-top: 5px;
+    }
+      
+    .example-full-width {
+        margin-left: 40px;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .login mat-card-actions{
+        text-align: center
+    }
+    .login mat-card-actions a{
+        background-color:#3cbe5b;
+        outline: #3cbe5b;
+        color: #ffffff;
+        padding: 0px 40px;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    .login .forgot{
+        font-size: 15px;
+        font-weight: 600;
+        font-family: 'Rubik', sans-serif;
+    }
+    .login .forgot a{
+        text-decoration: none;
+        color: #3cbe5b;
+    }
