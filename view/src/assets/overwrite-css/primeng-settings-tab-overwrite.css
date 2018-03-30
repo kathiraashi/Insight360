@@ -1,0 +1,123 @@
+
+/* settings tabs modify */
+.example-card.tab-mat-card{
+    padding: 0px;
+    box-shadow: none !important;
+}
+.tab-mat-card .ui-tabview{
+  padding: 0px !important;
+  background: whitesmoke;
+}
+.tab-mat-card .ui-tabview .ui-tabview-panel{
+    padding: 5px !important;
+    width: 79%;
+}
+.tab-mat-card .ui-widget-header{
+    background: #ffffff !important;
+}
+
+.tab-mat-card .ui-datatable .ui-widget-header{
+    background: transparent !important;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    padding: 4px;
+}
+.tab-mat-card .ui-datatable .ui-datatable-thead>tr>th, 
+.tab-mat-card .ui-datatable .ui-datatable-tfoot>tr>td, 
+.tab-mat-card .ui-datatable .ui-datatable-data>tr>td{
+    border-width: 0px ;
+    text-align: center;
+}
+.tab-mat-card.style-new .ui-datatable .ui-datatable-data>tr>td{
+    vertical-align: baseline;
+}
+.tab-mat-card .ui-datatable .ui-widget-content{
+    border-width: 0px;
+}
+.tab-mat-card .ui-datatable-tablewrapper{
+    border: 1px solid #e6e9ec;
+}
+.tab-mat-card .ui-datatable-thead tr{
+    border-bottom: 1px solid #e6e9ec;
+    height: 45px;
+}
+.tab-mat-card .ui-datatable th.ui-state-default{
+    background-color: #ffffff !important;
+}
+.tab-mat-card .ui-datatable th.ui-state-default.ui-state-active {
+    background-color:#536777 !important;
+    outline: none;
+}
+.tab-mat-card .ui-datatable tbody > tr.ui-widget-content.ui-datatable-odd{
+    background: #ffffff !important;
+}
+.tab-mat-card .ui-datatable tbody > tr.ui-widget-content{
+    background: whitesmoke !important;
+}
+.tab-mat-card .ui-tabview-left>.ui-tabview-nav{
+ height: auto !important;
+ width: 20%;
+ margin-right: 1%;
+ padding-top: 0px;
+ border-radius: 0px;
+ background-color: whitesmoke !important;
+}
+.tab-mat-card .ui-tabview.ui-tabview-left>.ui-tabview-nav li{
+    border: 0px solid #e4e2e2;
+    background-color: #ffffff;
+    width: 100%;
+    height: 50px;
+    line-height: 30px;
+    border-radius: 2px;
+    margin: 5px;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2), 0 2px 10px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+.tab-mat-card .ui-tabview .ui-tabview-nav > li.ui-state-active{
+    background: #49b660 !important;
+    line-height: 30px;
+    color: #ffffff !important;
+}
+.tab-mat-card .ui-tabview .ui-tabview-nav li.ui-tabview-selected a{
+    color: #ffffff;
+    line-height: 30px;
+}
+.tab-mat-card .ui-tabview .ui-tabview-nav > li:not(.ui-state-active):not(.ui-state-disabled):hover{
+    background: #49b660;
+}
+.tab-mat-card .ui-tabview .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover{
+    border-color: #ffffff;
+    color: #212121;
+}
+.tab-mat-card .ui-tabview .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover a{
+    color: #ffffff;
+}
+.tab-mat-card .ui-tabview .ui-tabview-nav > li:last-child:not(.ui-state-active):not(.ui-state-disabled):hover{
+    border-bottom-color: #49b660 !important;
+}
+.tab-mat-card .ui-tabview .ui-tabview-nav >li:last-child.ui-state-active{
+    border-bottom-color:#49b660 !important;
+}
+.tab-mat-card .ui-tabview-left>.ui-tabview-panels{
+    width: 79% !important;
+}
+.tab-mat-card .ui-datatable .ui-paginator{
+    padding: 5px !important;
+    text-align: right !important;
+    border-top: 1px solid #e6e9ec;
+}
+.tab-mat-card .ui-dropdown .ui-dropdown-label{
+    text-align: left !important;
+}
+.tab-mat-card .ui-dropdown.ui-state-focus{
+    box-shadow: 0px 0px 0px transparent !important;
+}
+.tab-mat-card .ui-corner-all{
+    border-radius: 0px !important;
+}
+
+.tab-mat-card .demo-tab-content .ui-datatable{ 
+    box-shadow: 0px 0px 0px 0px white;
+}
+.tab-mat-card .ui-tabview-panel.ui-widget-content.ng-star-inserted:not(.ui-helper-hidden){
+    position: absolute;
+}

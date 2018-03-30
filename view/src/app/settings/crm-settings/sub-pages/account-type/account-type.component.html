@@ -1,0 +1,94 @@
+<div *ngIf="ShowLoading" class="Loader-Animation">
+    <h1 class="Loding-h1">
+        <span class=" let1">L</span>  
+        <span class=" let2">0</span>  
+        <span class=" let3">A</span>  
+        <span class=" let4">D</span>  
+        <span class=" let5">I</span>
+        <span class=" let6">N</span> 
+        <span class=" let7">G</span> 
+        <span class=" let8">.</span>  
+        <span class=" let9">.</span>  
+        <span class=" let10">.</span>  
+        <span class=" let11">.</span>  
+      </h1>
+</div>
+<p-dataTable [value]="Datas" [globalFilter]="AccountTypeFilter" sortMode="multiple" [rows]="10" [paginator]="true" [pageLinks]="5" [rowsPerPageOptions]="[10,25,50,100]">
+  <p-header>
+    <div class="row">
+      <div class="col-sm-4 text-left">
+        <button mat-button class="color-success" style="font-weight:600" (click)="AddAccountType()"> + Create </button>
+      </div>
+      <div class="col-sm-3"></div>
+      <div class="col-sm-5 text-left">
+        <div style="width:100%;display:inline-flex">
+          <div style="float:left;width:85%">
+            <mat-form-field class="search-field" style="width:100%;height:44px; margin-top:-10px;">
+              <input matInput type="text" #AccountTypeFilter placeholder="Search" />
+              <button mat-button matSuffix mat-icon-button aria-label="Search">
+                <mat-icon style="font-size:25px">search</mat-icon>
+              </button>
+            </mat-form-field>
+          </div>
+          <div style="float:left;width:15%;text-align:center;height:35px">
+            <button mat-button mat-icon-button>
+              <mat-icon style="font-size:28px;margin-top:8px;color:#546a77">filter_list</mat-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </p-header>
+
+  <p-headerColumnGroup>
+    <p-row>
+      <p-column header="S.No"  [style]="{'width':'60px','text-align':'center'}"></p-column>
+      <p-column header="brand" field="brand"  [sortable]="true" [style]="{'min-width':'17%','text-align':'center'}"></p-column>
+      <p-column header="year" field="year"  [sortable]="true" [style]="{'min-width':'22%','text-align':'center'}"></p-column>
+      <p-column header="color" field="color" [sortable]="true" [style]="{'text-align':'center'}"></p-column>
+      <p-column header="vin" field="vin" [sortable]="true" [style]="{'text-align':'center'}"></p-column>
+      <p-column header="Action" [style]="{'text-align':'center'}"></p-column>
+    </p-row>
+  </p-headerColumnGroup>
+
+  <p-column>
+    <ng-template let-col let-Index="rowIndex" pTemplate="body">
+      <span>{{Index+1}}</span>
+    </ng-template>
+  </p-column>
+  <p-column>
+    <ng-template let-data="rowData" pTemplate="body">
+      <span> {{data['brand']}} </span>
+    </ng-template>
+  </p-column>
+  <p-column>
+    <ng-template let-data="rowData" pTemplate="body">
+      <span> {{data['year']}} </span>
+    </ng-template>
+  </p-column>
+  <p-column>
+    <ng-template let-data="rowData" pTemplate="body">
+      <span> {{data['color']}} </span>
+    </ng-template>>
+  </p-column>
+  <p-column>
+    <ng-template let-data="rowData" pTemplate="body">
+      <span> {{data['vin']}} </span>
+    </ng-template>
+  </p-column>
+  <p-column styleClass="col-button" [style]="{'text-align':'center'}">
+    <ng-template let-data="rowData" pTemplate="body">
+      <div class="button-row tabel-action">
+        <button mat-mini-fab class="bg-color-info" color="accent" (click)="EditAccountType(data)">
+          <mat-icon>border_color</mat-icon>
+        </button>
+        <button mat-mini-fab class="bg-color-warning" color="accent" (click)="ViewAccountType(data)">
+          <mat-icon>visibility</mat-icon>
+        </button>
+        <button mat-mini-fab class="bg-color-danger" color="accent" (click)="DeleteConfirmation(data)">
+          <mat-icon>delete_forever</mat-icon>
+        </button>
+      </div>
+    </ng-template>
+  </p-column>
+</p-dataTable>

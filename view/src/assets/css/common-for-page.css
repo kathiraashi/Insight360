@@ -1,0 +1,50 @@
+/* Every Page Identity header css  */
+.page{
+    margin: 90px 20px 0px 20px;
+
+}
+.page-identity{
+    height: 42px;
+    width: 100%;
+}
+.page-identity .page-name{
+    width: 50%;
+    height: 42px;
+    float: left;
+}
+.page-identity .page-name h5{
+    line-height: 42px;
+    font-size: 18px;
+    font-weight: 800;
+    color: #6c7986;
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+}
+.page-identity .page-track{
+    width: 50%;
+    height: 42px;
+    float: left;
+}
+.page-identity .page-track ul{
+    margin-bottom: 0px;
+    list-style: none;
+    display: inline-block;
+    height: 42px;
+}
+.page-identity .page-track ul{
+    float: right;
+}
+.page-identity .page-track ul li{
+    float: left;
+    height: 42px;
+    margin-right: 10px;
+    line-height: 42px;
+    font-size: 13px;
+    font-weight: 500;
+    color:#61626394;
+    font-family: 'Rubik', sans-serif;
+}
+.page-identity .page-track ul li a{
+    text-decoration: none;
+    color:#49b660;
+}

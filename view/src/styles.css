@@ -3,15 +3,149 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import '../node_modules/@angular/cdk/overlay-prebuilt.css';
 @import '../node_modules/@angular/cdk/a11y-prebuilt.css';
+@import "../node_modules/primeng/resources/themes/omega/theme.css";
+@import "../node_modules/primeng/resources/primeng.min.css";
 
 @import url('https://fonts.googleapis.com/css?family=Rubik');
 
+/* npm font-awesome css */
+@import '../node_modules/font-awesome/css/font-awesome.css';
+
 /* Custom css */
 @import '../src/assets/css/custom-margin-padding.css';
+@import '../src/assets/css/common-for-page.css';
 
 /* Overwrite css */
 @import '../src/assets/overwrite-css/material-common-overwrite.css';
+@import '../src/assets/overwrite-css/primeng-settings-tab-overwrite.css';
 
 body{
     background-color: #ecf0f5b5;
 }
+
+/* Colors css */
+.color-success{
+    color: #49b660 !important;
+}
+.color-warning{
+  color: rgb(255, 157, 11) !important;
+}
+.color-info{
+  color: rgb(13, 141, 216) !important;
+}
+.color-danger{
+    color: rgb(221, 10, 10) !important;
+}
+.color-white{
+    color: #ffffff !important;
+}
+
+.bg-color-success{
+    background-color: #49b660 !important;
+}
+.bg-color-warning{
+    background-color: rgb(255, 157, 11) !important;
+}
+.bg-color-info{
+    background-color: rgb(13, 141, 216) !important;
+}
+.bg-color-danger{
+    background-color: rgb(221, 10, 10) !important;
+}
+.bg-color-white{
+    background-color: #ffffff !important;
+}
+
+
+/* Common css */
+button:focus{
+    outline: none
+}
+
+.Loding-h1 {
+    position: relative;
+    font-family: ‘Arial Narrow’, sans-serif;
+    font-size: 20px;
+    color: #516570;
+    font-weight: 900;
+    top: 40%;
+    text-transform: uppercase; 
+  }
+  /* Loading css */
+  .let1 {
+    position: relative;
+    animation: drop 1.2s ease-in-out infinite;
+    animation-delay: 0.2s;
+  }
+  .let2 {
+    position: relative;
+    animation: drop 1.2s ease-in-out infinite;
+    animation-delay: 0.3s;
+  }
+  .let3 {
+    position: relative;
+    animation: drop 1.2s ease-in-out infinite;
+    animation-delay: 0.4s;
+  }
+  .let4 {
+    position: relative;
+    animation: drop 1.2s ease-in-out infinite;
+    animation-delay: 0.5s;
+  }
+  .let5 {
+    position: relative;
+    animation: drop 1.2s ease-in-out infinite;
+    animation-delay: 0.6s;
+  }
+  .let6 {
+    position: relative;
+    animation: drop 1.2s ease-in-out infinite;
+    animation-delay: 0.7s;
+  }
+  .let7 {
+    position: relative;
+    animation: drop 1.2s ease-in-out infinite;
+    animation-delay: 0.8s;
+  }
+  .let8 {
+    position: relative;
+    animation: drop 1.2s ease-in-out infinite;
+    animation-delay: 0.9s;
+  }
+  .let9 {
+    position: relative;
+    animation: drop 1.2s ease-in-out infinite;
+    animation-delay: 0.0s;
+  }
+  .let10 {
+    position: relative;
+    animation: drop 1.2s ease-in-out infinite;
+    animation-delay: 0.1s;
+  }
+  .let11 {
+    position: relative;
+    animation: drop 1.2s ease-in-out infinite;
+    animation-delay: 0.2s;
+  }
+  
+  @keyframes drop {
+      10% {
+          opacity: 0;
+      }
+      20% {
+          opacity: 0.2;
+      }
+      40% {
+          opacity: 0.4;
+      }
+      60% {
+          opacity: 0.6;
+      }
+      80% {
+          opacity: 0.8;
+      }
+      100% {
+          opacity: 1;
+      }
+  }
+  

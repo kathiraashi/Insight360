@@ -1,0 +1,85 @@
+<div class="page">
+  <div class="page-identity">
+    <div class="page-name">
+      <h5> CRM Settings </h5>
+    </div>
+    <div class="page-track">
+      <ul>
+        <li> Settings </li>
+        <li>
+          <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+        </li>
+        <li>
+          <a routerLink="/CRMSettings"> CRM Settings </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <mat-card class="example-card tab-mat-card">
+    <p-tabView orientation="left" (onChange)="handleChange($event)">
+
+      <p-tabPanel header="Account Type">
+        <ng-template pTemplate="content">
+          <app-account-type *ngIf="activeTab === 0"></app-account-type>
+        </ng-template>
+      </p-tabPanel>
+
+      <p-tabPanel header="Industry Type">
+        <ng-template pTemplate="content">
+          <app-industry-type *ngIf="activeTab === 1"></app-industry-type>
+        </ng-template>
+      </p-tabPanel>
+
+      <p-tabPanel header="Ownership Type">
+        <ng-template pTemplate="content">
+          <app-ownership-type *ngIf="activeTab === 2"></app-ownership-type>
+        </ng-template>
+      </p-tabPanel>
+
+      <p-tabPanel header="Activity Type">
+        <ng-template pTemplate="content">
+          <app-activity-type *ngIf="activeTab === 3"></app-activity-type>
+        </ng-template>
+      </p-tabPanel>
+
+      <p-tabPanel header="Activity Status">
+        <ng-template pTemplate="content">
+          <app-activity-status *ngIf="activeTab === 4"></app-activity-status>
+        </ng-template>
+      </p-tabPanel>
+
+      <p-tabPanel header="Activity Priority">
+        <ng-template pTemplate="content">
+          <app-activity-priority *ngIf="activeTab === 5"></app-activity-priority>
+        </ng-template>
+      </p-tabPanel>
+
+      <p-tabPanel header="Pipeline Status">
+        <ng-template pTemplate="content">
+          <app-pipeline-status *ngIf="activeTab === 6"></app-pipeline-status>
+        </ng-template>
+      </p-tabPanel>
+
+      <p-tabPanel header="Contact Role">
+        <ng-template pTemplate="content">
+          <app-contact-role *ngIf="activeTab === 7"></app-contact-role>
+        </ng-template>
+      </p-tabPanel>
+
+      <p-tabPanel header="Quotation Terms">
+        <ng-template pTemplate="content">
+          <app-quotation-terms *ngIf="activeTab === 8"></app-quotation-terms>
+        </ng-template>
+      </p-tabPanel>
+
+      <p-tabPanel header="Opportunity Status">
+        <ng-template pTemplate="content">
+          <app-opportunity-status *ngIf="activeTab === 9"></app-opportunity-status>
+        </ng-template>
+      </p-tabPanel>
+
+    </p-tabView>
+  </mat-card>
+
+</div>

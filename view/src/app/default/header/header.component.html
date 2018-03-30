@@ -1,0 +1,33 @@
+<div class="home-header YslideAnimateDown"  >
+  <div class="header-one">
+    <img src="assets/Files/images/logo.png" alt="Logo" class="header-logo"> 
+    <div class="logout"> <h5><a routerLink="/"> Logout </a></h5></div>
+  </div>
+  <div class="header-two">
+    <ul class="menus">
+      <li class="menu-list" [ngClass]="{'active': ActiveHeader === '/Dashboard'}">
+        <a routerLink="/Dashboard">
+          <span style="display:flex">
+            <span class="pull-left" style="line-height:30px;margin-top:8px;">
+              <mat-icon>dashboard</mat-icon>
+            </span>  
+            <span class="pull-left"> &nbsp; Dashboard </span> 
+          </span>
+        </a>
+      </li>
+      <li class="menu-list" >
+        <a class="tree-menus">
+          <span style="display:flex">
+            <span class="pull-left" style="line-height:30px;margin-top:10px;">
+              <mat-icon style="font-size:22px;">settings</mat-icon>
+            </span>  
+            <span class="pull-left"> &nbsp; Settings </span> 
+          </span>
+          <ul class="tree-view">
+            <li class="tree-list" ><a routerLink="/CRMSettings"> CRM Settings </a></li>
+          </ul>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

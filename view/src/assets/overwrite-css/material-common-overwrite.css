@@ -5,3 +5,97 @@
 .mat-form-field-ripple{
     background-color: #49b660;
 }
+
+/* Table Inside Button Change */
+.tabel-action .mat-mini-fab{
+    width: 37px !important;
+    height: 37px !important;
+}
+.tabel-action .mat-mini-fab .mat-button-wrapper{
+    line-height: 20px !important;
+    padding: 8px 0 !important;
+}
+.tabel-action .material-icons{
+    font-size: 21px !important;
+}
+
+/* Material popup background */
+.cdk-overlay-dark-backdrop {
+    background: rgba(0, 0, 0, 0.60);
+}
+
+/* Button Color Change */
+.mat-raised-button.mat-accent, 
+.mat-fab.mat-accent, 
+.mat-mini-fab.mat-accent{
+    background-color: #49b660 ;
+    color: #ffffff;
+}
+
+
+/* Form View Available Prefix Style Change */
+mat-form-field.availabel-prefix .mat-form-field-prefix{
+    min-width: 120px !important;
+    margin-right: 5px;
+    color: #49b660;
+  }
+mat-form-field.availabel-prefix .mat-input-element:disabled{
+    color: #536777;
+    font-weight: 600;
+    font-size: 15px;
+}
+mat-form-field.availabel-prefix .mat-select-disabled .mat-select-value{
+    color: #536777;
+    font-weight: 600;
+    font-size: 15px;
+}
+mat-form-field.availabel-prefix.mat-form-field-disabled .mat-form-field-label{
+    display: none;
+}
+mat-form-field.availabel-prefix .mat-select-disabled .mat-select-arrow-wrapper>.mat-select-arrow{
+    opacity: 0 ;
+}
+
+/*  snack bar color Changes*/
+.snack-bar-style-one {
+    background-color: #536777;
+    color: #fff;
+    margin-top: 8px !important;
+    padding: 10px 24px !important;
+    min-width: auto !important;
+}
+.snack-bar-style-one .mat-simple-snackbar-action {
+    display: none !important
+}
+.snack-bar-style-one-success {
+    background-color: #536777;
+    color: #fff;
+    margin-top: 7px !important;
+    padding: 10px 24px !important;
+    min-width: auto !important;
+}
+.snack-bar-style-one-success .mat-simple-snackbar-action {
+    display: block !important;
+    color: #ffffff;
+    background-color: #05a005;
+    letter-spacing: 0.5px;
+    border-radius: 27px;
+    padding: 4px 10px;
+    cursor: default;
+}
+.snack-bar-style-one-error {
+    background-color: #536777;
+    color: #fff;
+    margin-top: 7px !important;
+    padding: 10px 24px !important;
+    min-width: auto !important;
+}
+.snack-bar-style-one-error .mat-simple-snackbar-action {
+    display: block !important;
+    color: #ffffff;
+    background-color: #ff0000;
+    letter-spacing: 0.5px;
+    border-radius: 27px;
+    padding: 4px 10px;
+    cursor: default;
+}

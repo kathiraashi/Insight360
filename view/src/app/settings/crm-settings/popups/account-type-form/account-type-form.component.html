@@ -1,0 +1,25 @@
+<form [formGroup]="AccountTypeForm" (ngSubmit)="submit()">
+    <h1 mat-dialog-title class="pop-up-title"> {{Header}} </h1>
+    <hr style="margin-top:10px;">
+    <mat-dialog-content style="overflow:initial">
+      <div class="form-group row">
+        <div class="col-sm-7" style="margin-bottom:20px;">
+            <div class="example-container">
+                <mat-form-field [floatLabel]="floatLabel" class="availabel-prefix">
+                    <input matInput type="text" formControlName="accountType" placeholder=" Account Type ">
+                    <span *ngIf="disabled" matPrefix> <b> Account Type : </b></span>
+                </mat-form-field>
+            </div>
+        </div>
+      </div>
+    </mat-dialog-content>
+    <mat-dialog-actions class="pull-right"> 
+        <div *ngIf="!disabled">
+          <button type="button" mat-raised-button class="bg-color-warning" (click)="close()" color="accent" > Close </button>
+          <button type="submit" mat-raised-button color="accent" > Submit </button>
+        </div>
+        <div *ngIf="disabled" >
+          <button type="button" mat-raised-button class="bg-color-warning" (click)="close()" color="accent" > Close </button>
+        </div>
+    </mat-dialog-actions>
+  </form>
