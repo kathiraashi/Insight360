@@ -7,6 +7,7 @@
   <div class="row card-row">
     <div class="col-sm-4"></div>
     <div class="col-sm-4">
+    <form [formGroup]="LoginForm" (ngSubmit)="submit()">
       <mat-card class="example-card login-card">
         <mat-card-header>
             <mat-card class="example-card login-header">
@@ -20,7 +21,7 @@
           <div class="form-field">
             <mat-icon>perm_identity</mat-icon>
             <mat-form-field class="example-full-width">
-              <input matInput #message maxlength="26" placeholder="User E-mail">
+              <input type="email" matInput #message formControlName="User_Email" placeholder="User E-mail">
               <mat-hint align="start"><strong></strong> </mat-hint>
               <mat-hint align="end"></mat-hint>
             </mat-form-field>
@@ -29,7 +30,7 @@
           <div class="form-field">
             <mat-icon>lock_outline</mat-icon>
             <mat-form-field class="example-full-width">
-              <input matInput #message maxlength="12" placeholder="Password">
+              <input type="password" matInput #message formControlName="User_Password" placeholder="Password">
               <mat-hint align="start"><strong></strong> </mat-hint>
               <mat-hint align="end"></mat-hint>
             </mat-form-field>
@@ -37,11 +38,12 @@
 
         </mat-card-content>
         <mat-card-actions>
-            <a mat-raised-button routerLink="/Dashboard"> Login </a>
+            <button [disabled]="!LoginForm.valid" type="submit" mat-raised-button > Login </button>
         </mat-card-actions>
         <hr>
         <h5 class="forgot"> Forgot <a href=""> Password ? </a> </h5>
       </mat-card>
+    </form>
     </div>
     <div class="col-sm-4"></div>
   </div>

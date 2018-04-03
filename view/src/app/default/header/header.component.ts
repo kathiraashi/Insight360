@@ -17,4 +17,9 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  LogOut() {
+    localStorage.removeItem('Insight360');
+    this.router.navigate(['/']);
+  }
+
 }

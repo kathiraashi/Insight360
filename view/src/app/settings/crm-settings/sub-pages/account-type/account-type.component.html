@@ -1,3 +1,5 @@
+<ng-snotify></ng-snotify>
+
 <div *ngIf="ShowLoading" class="Loader-Animation">
     <h1 class="Loding-h1">
         <span class=" let1">L</span>  
@@ -43,10 +45,9 @@
   <p-headerColumnGroup>
     <p-row>
       <p-column header="S.No"  [style]="{'width':'60px','text-align':'center'}"></p-column>
-      <p-column header="brand" field="brand"  [sortable]="true" [style]="{'min-width':'17%','text-align':'center'}"></p-column>
-      <p-column header="year" field="year"  [sortable]="true" [style]="{'min-width':'22%','text-align':'center'}"></p-column>
-      <p-column header="color" field="color" [sortable]="true" [style]="{'text-align':'center'}"></p-column>
-      <p-column header="vin" field="vin" [sortable]="true" [style]="{'text-align':'center'}"></p-column>
+      <p-column header="Name" field="Account_Type"  [sortable]="true" [style]="{'min-width':'25%','text-align':'center'}"></p-column>
+      <p-column header="User Name" field="User_Name"  [sortable]="true" [style]="{'min-width':'25%','text-align':'center'}"></p-column>
+      <p-column header="Last Modified" field="updatedAt" [sortable]="true" [style]="{'text-align':'center'}"></p-column>
       <p-column header="Action" [style]="{'text-align':'center'}"></p-column>
     </p-row>
   </p-headerColumnGroup>
@@ -58,22 +59,17 @@
   </p-column>
   <p-column>
     <ng-template let-data="rowData" pTemplate="body">
-      <span> {{data['brand']}} </span>
+      <span> {{data['Account_Type']}} </span>
     </ng-template>
   </p-column>
   <p-column>
     <ng-template let-data="rowData" pTemplate="body">
-      <span> {{data['year']}} </span>
+      <span> {{data['User_Name']}} </span>
     </ng-template>
   </p-column>
   <p-column>
     <ng-template let-data="rowData" pTemplate="body">
-      <span> {{data['color']}} </span>
-    </ng-template>>
-  </p-column>
-  <p-column>
-    <ng-template let-data="rowData" pTemplate="body">
-      <span> {{data['vin']}} </span>
+      <span> {{data['updatedAt'] | amDateFormat:'DD/MM/YYYY, h:mm a'}} </span>
     </ng-template>
   </p-column>
   <p-column styleClass="col-button" [style]="{'text-align':'center'}">

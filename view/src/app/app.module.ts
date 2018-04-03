@@ -9,6 +9,10 @@
   import { HttpClientModule } from '@angular/common/http';
   import { RouterModule, Routes } from '@angular/router';
 
+// Advanced Module
+  import { SnotifyModule, SnotifyService, ToastDefaults } from 'ng-snotify';
+  import { MomentModule } from 'angular2-moment';
+
 // App Modules And Components
   import { AppComponent } from './app.component';
   import { AppRoutingModule } from './app.routing.module';
@@ -49,6 +53,11 @@
       import { QuotationTermsFormComponent } from './settings/crm-settings/popups/quotation-terms-form/quotation-terms-form.component';
       import { OpportunityStatusFormComponent
       } from './settings/crm-settings/popups/opportunity-status-form/opportunity-status-form.component';
+  // Service
+      // All Settings
+        import { CrmSettingsService } from './service/setting/crm-settings/crm-settings.service';
+  // Admin Service
+    import { AdminServiceService } from './service/admin-service/admin-service.service';
 
 
 @NgModule({
@@ -101,9 +110,22 @@
     // App Modules And Components
       AppRoutingModule,
       MaterialModule,
-      PrimengModule
+      PrimengModule,
+    // Advanced Module
+      SnotifyModule,
+      MomentModule
   ],
-  providers: [],
+  providers: [
+    // Advanced Module
+      { provide: 'SnotifyToastConfig',
+        useValue: ToastDefaults
+      },
+      SnotifyService,
+    // Settings
+      CrmSettingsService,
+    // Admin Service
+      AdminServiceService
+  ],
   bootstrap: [AppComponent],
   entryComponents: [
     // Common Folder

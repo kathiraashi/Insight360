@@ -53,7 +53,7 @@
     .login mat-card-actions{
         text-align: center
     }
-    .login mat-card-actions a{
+    .login mat-card-actions button{
         background-color:#3cbe5b;
         outline: #3cbe5b;
         color: #ffffff;

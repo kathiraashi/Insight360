@@ -8,6 +8,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Rubik');
 
+@import  "../node_modules/ng-snotify/styles/material.css";
 /* npm font-awesome css */
 @import '../node_modules/font-awesome/css/font-awesome.css';
 
@@ -18,6 +19,7 @@
 /* Overwrite css */
 @import '../src/assets/overwrite-css/material-common-overwrite.css';
 @import '../src/assets/overwrite-css/primeng-settings-tab-overwrite.css';
+@import '../src/assets/overwrite-css/ng-snotify-overwrite.css';
 
 body{
     background-color: #ecf0f5b5;

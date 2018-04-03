@@ -1,0 +1,24 @@
+.snotifyToast__title {
+    font-size: 15px;
+    line-height: 17px;
+    margin-bottom: 0px;
+    color: #fff;
+}
+.snotifyToast__inner{
+    padding: 5px 10px;
+    min-height: 47px;
+    font-size: 12px;
+}
+.snotify-icon{
+    max-height: 30px;
+    max-width: 30px;
+}
+.snotifyToast__progressBar__percentage{
+    height: 3px;
+}
+.snotifyToast__progressBar {
+    height: 3px;
+}
+.snotify-leftTop, .snotify-centerTop, .snotify-rightTop{
+    top: -2px;
+}
